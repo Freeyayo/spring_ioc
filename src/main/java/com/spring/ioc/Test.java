@@ -14,7 +14,10 @@ public class Test {
 //		System.out.println(context.getBean("config"));
 		
 //		context = new AnnotationConfigApplicationContext(BeanConfiguration.class);
-		context = new AnnotationConfigApplicationContext("com.spring.configuration");
-		System.out.println(context.getBean("dataConfig"));
+//		context = new AnnotationConfigApplicationContext("com.spring.configuration");
+//		System.out.println(context.getBean("dataConfig"));
+		
+		context = new AnnotationConfigApplicationContext("com.spring.ioc");
+		System.out.println(context.getBean(DataConfig.class));
 	}
 }
