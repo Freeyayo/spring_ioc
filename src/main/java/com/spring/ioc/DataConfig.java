@@ -8,7 +8,6 @@ import lombok.Data;
 @Data
 @Component
 public class DataConfig {
-	
 	@Value("localhost:5566")
 	private String url;
 	@Value("driverName")
